@@ -116,7 +116,7 @@ mkdir -p .agent/skills
 
 # 克隆技能到项目
 cd .agent/skills
-git clone https://github.com/YOUR-USERNAME/thesis-optimizer.git
+git clone https://github.com/Haimbeau1o/thesis-optimizer.git
 ```
 
 #### 方法 B：全局安装（所有项目共享）
@@ -124,7 +124,7 @@ git clone https://github.com/YOUR-USERNAME/thesis-optimizer.git
 ```bash
 # 克隆到 Antigravity 全局 skills 目录
 cd ~/.gemini/antigravity/skills  # Antigravity 全局技能目录
-git clone https://github.com/YOUR-USERNAME/thesis-optimizer.git
+git clone https://github.com/Haimbeau1o/thesis-optimizer.git
 ```
 
 #### 验证安装
@@ -149,7 +149,7 @@ Codex 使用 `~/.codex/skills/` 作为全局技能目录，项目级技能使用
 # 打开 Codex
 # 输入 $ 并选择 "Skill Installer"
 # 粘贴以下 GitHub URL:
-https://github.com/YOUR-USERNAME/thesis-optimizer
+https://github.com/Haimbeau1o/thesis-optimizer
 ```
 
 #### 方法 B：手动安装（全局）
@@ -157,7 +157,7 @@ https://github.com/YOUR-USERNAME/thesis-optimizer
 ```bash
 # 克隆到 Codex 全局目录
 cd ~/.codex/skills
-git clone https://github.com/YOUR-USERNAME/thesis-optimizer.git
+git clone https://github.com/Haimbeau1o/thesis-optimizer.git
 
 # 重启 Codex
 ```
@@ -169,7 +169,7 @@ git clone https://github.com/YOUR-USERNAME/thesis-optimizer.git
 cd /path/to/your/thesis-project
 mkdir -p .agent/skills
 cd .agent/skills
-git clone https://github.com/YOUR-USERNAME/thesis-optimizer.git
+git clone https://github.com/Haimbeau1o/thesis-optimizer.git
 ```
 
 ---
@@ -185,7 +185,7 @@ Cursor 兼容 Agent Skills 规范，支持从 GitHub 直接导入。
 3. 点击 "Add Remote Rule (GitHub)"
 4. 输入仓库 URL：
    ```
-   https://github.com/YOUR-USERNAME/thesis-optimizer
+   https://github.com/Haimbeau1o/thesis-optimizer
    ```
 
 #### 方法 B：手动克隆
@@ -194,7 +194,7 @@ Cursor 兼容 Agent Skills 规范，支持从 GitHub 直接导入。
 # 在项目目录下
 mkdir -p .agent/skills
 cd .agent/skills
-git clone https://github.com/YOUR-USERNAME/thesis-optimizer.git
+git clone https://github.com/Haimbeau1o/thesis-optimizer.git
 ```
 
 ---
@@ -214,7 +214,7 @@ Claude Code 使用 `.claude/skills/` 目录。
 # 在项目目录下
 mkdir -p .claude/skills
 cd .claude/skills
-git clone https://github.com/YOUR-USERNAME/thesis-optimizer.git
+git clone https://github.com/Haimbeau1o/thesis-optimizer.git
 ```
 
 ---
@@ -239,7 +239,7 @@ git clone https://github.com/YOUR-USERNAME/thesis-optimizer.git
 # 1. 确定您的 Agent 技能目录（查阅其文档）
 # 2. 克隆技能
 cd <your-agent-skills-directory>
-git clone https://github.com/YOUR-USERNAME/thesis-optimizer.git
+git clone https://github.com/Haimbeau1o/thesis-optimizer.git
 
 # 3. 重启您的 Agent（如果需要）
 ```
@@ -250,7 +250,7 @@ git clone https://github.com/YOUR-USERNAME/thesis-optimizer.git
 
 如果您的环境没有 Git，可以直接下载 ZIP：
 
-1. 访问 [GitHub Release 页面](https://github.com/YOUR-USERNAME/thesis-optimizer/releases)
+1. 访问 [GitHub Release 页面](https://github.com/Haimbeau1o/thesis-optimizer/releases)
 2. 下载最新版本的 `thesis-optimizer.zip`
 3. 解压到对应的 skills 目录：
    - Antigravity: `.agent/skills/`
@@ -605,7 +605,7 @@ thesis-optimizer/
 3. ✅ Agent 是否正确加载技能（询问 "你有哪些 skills?"）
 4. ✅ 查看 Agent 日志中的错误信息
 
-仍有问题？请提交 [GitHub Issue](https://github.com/YOUR-USERNAME/thesis-optimizer/issues)。
+仍有问题？请提交 [GitHub Issue](https://github.com/Haimbeau1o/thesis-optimizer/issues)。
 
 ---
 
@@ -620,8 +620,8 @@ thesis-optimizer/
 - 📘 [详细使用指南](./USAGE_GUIDE.md)
 - 🔧 [自定义优化策略](./references/strategy_ai_reduction.md)
 - 📊 [评估标准详解](./references/evaluation_criteria.md)
-- 💬 [GitHub Discussions](https://github.com/YOUR-USERNAME/thesis-optimizer/discussions)
-- 🐛 [报告问题](https://github.com/YOUR-USERNAME/thesis-optimizer/issues)
+- 💬 [GitHub Discussions](https://github.com/Haimbeau1o/thesis-optimizer/discussions)
+- 🐛 [报告问题](https://github.com/Haimbeau1o/thesis-optimizer/issues)
 
 ---
 
