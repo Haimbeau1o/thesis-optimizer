@@ -39,6 +39,12 @@
 
 **Thesis-Optimizer** 是一个专为**计算机深度学习方向硕士学位论文**设计的智能优化系统。采用**两层文档架构**和**显式状态追踪**机制，实现模块化闭环优化流程。
 
+<div align="center">
+
+![三维协同优化](./infographic/thesis-optimizer/thesis_optimizer_features_1770290890292.png)
+
+</div>
+
 ### 为什么需要此工具？
 
 在学位论文写作过程中，您可能面临以下挑战：
@@ -64,6 +70,12 @@
 
 ### 📊 两层文档架构
 
+<div align="center">
+
+![两层文档架构](./infographic/thesis-optimizer/thesis_optimizer_architecture_1770290993780.png)
+
+</div>
+
 ```
 第一层: 总揽文档 (thesis_master_overview.md)
   ├── 论文整体分析与解读
@@ -78,6 +90,12 @@
 ```
 
 ### 🔄 闭环优化流程
+
+<div align="center">
+
+![如何使用 Thesis-Optimizer](./infographic/thesis-optimizer/thesis_optimizer_workflow_1770290937152.png)
+
+</div>
 
 1. **初始化**：完整分析论文，生成总揽文档
 2. **逐章优化**：按优先级处理每个章节
@@ -351,6 +369,12 @@ git clone https://github.com/Haimbeau1o/thesis-optimizer.git
 ---
 
 ## 🛠️ 优化策略详解
+
+<div align="center">
+
+![三大优化策略详解](./infographic/thesis-optimizer/thesis_optimizer_strategies_1770291034350.png)
+
+</div>
 
 ### 策略 A：降低 AI 检测率
 
