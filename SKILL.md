@@ -2,16 +2,16 @@
 name: thesis-optimizer
 description: |
   学术论文智能优化系统，专为计算机深度学习方向硕士学位论文设计。
-  提供三维协同优化：降AI检测率、降查重率、学术润色提升。
+  提供三维协同优化：降低 AI 写作风险特征、降查重率、学术润色提升。
   采用两层文档架构（总揽+章节）与显式状态追踪，实现模块化闭环优化。
-  内置 30+ 种中文学术 AI 模式检测，支持困惑度与突发性重构。严格遵循“最小干预与句内微调”原则，严禁大段AI式重写，保留最真实的科研人类逻辑。
-  
+  内置中文学术写作风险模式、词汇风险和句式节奏参考。严格遵循“最小干预与句内微调”原则，避免大段AI式重写，保留作者原有科研逻辑。
+
   Intelligent thesis optimization system for computer science deep learning master's theses.
-  Provides three-dimensional optimization: AI detection reduction, plagiarism reduction, 
-  academic polishing. Uses two-tier document architecture (master + chapter) with explicit 
-  state tracking for modular closed-loop optimization. Detects 30+ AI patterns and optimizes perplexity/burstiness 
-  through minimal intervention and intra-sentence restructuring to preserve authentic human logic.
-  
+  Provides three-dimensional optimization: AI-writing-risk reduction, plagiarism reduction,
+  academic polishing. Uses two-tier document architecture (master + chapter) with explicit
+  state tracking for modular closed-loop optimization. Uses writing-risk references and
+  minimal intra-sentence restructuring to preserve the author's logic.
+
   关键词: thesis-optimization, ai-detection, plagiarism, polishing, academic-writing, perplexity, burstiness
 ---
 
@@ -20,7 +20,7 @@ description: |
 ## 何时使用此Skill / When to Use
 
 当用户需要对学位论文进行以下优化时触发：
-- 降低AI检测率（GPTZero、Originality.ai等）
+- 降低 AI 写作风险特征（可结合用户指定检测工具抽样验证）
 - 降低查重率（知网、维普等）
 - 学术润色和表达提升
 - 系统化、可追踪的论文优化
@@ -74,15 +74,15 @@ description: |
    - 命名: `chapter_XX_name.md`
 
 2. **应用高阶优化策略** (阅读 `references/` 获取详细指导)
-   - 核心原则：**术语保护**绝对优先，保住所有公式和专业缩写。
-   - 🚨 **降AI率最高执行原则（最小干预）**：以降低AI率为目的时，**绝对禁止**让AI进行大段落的推翻重写或过度修改。所有的降AI操作必须严格限制在**句内重组**、局部语序调整或小范围词汇替换，必须采用最符合人类思维的书写逻辑，原汁原味地保留作者的推理与论述框架。
-   - ⚠️ **红线约束**：**绝对禁止**任何戏剧化、网文风或过度情绪化的词汇（如“暴力美学”、“疯狂抽取”、“撕碎”）。所有重写必须保持顶级学术期刊的**客观、严谨、中立**基调。
-   - 策略A: 模式扫描与定位 → 对抗 `ai_pattern_taxonomy.md`
-   - 策略B: 词汇去标记化 → 清理 `ai_vocabulary_blacklist.md` 强标记词
-   - 策略C: 困惑度与突发性重构 → `perplexity_burstiness.md`
-   - 策略D: 降AI率（底层句式/逻辑） → 依据人类逻辑进行句内微调，打破AI结构
-   - 策略E: 降查重率（语义改写） → `strategy_plagiarism.md`
-   - 策略F: 学术润色（精炼与连贯） → `strategy_polishing.md`
+   - 核心原则：**术语保护**优先，保留公式、专业缩写和关键推理链。
+   - **最小干预原则**：处理 AI 写作风险特征时，优先采用句内结构微调、局部语序调整和小范围词汇替换；不要推翻原段落逻辑或进行大段扩写。
+   - **学术语体约束**：避免戏剧化、网文风、口语化或过度情绪化表达（如“暴力美学”、“疯狂抽取”、“撕碎”等）。重写应保持客观、严谨、中立、平实。
+   - 策略A: 模式扫描与定位 → 对照 `references/ai_pattern_taxonomy.md`
+   - 策略B: 词汇风险检查 → 参考 `references/ai_vocabulary_blacklist.md`
+   - 策略C: 句式节奏检查 → 参考 `references/perplexity_burstiness.md`
+   - 策略D: 降低 AI 写作风险特征 → 依据作者原有逻辑进行句内微调
+   - 策略E: 降查重率（语义改写） → `references/strategy_plagiarism.md`
+   - 策略F: 学术润色（精炼与连贯） → `references/strategy_polishing.md`
 
 3. **生成优化后的LaTeX**
    - 保持原有格式规范
@@ -110,7 +110,7 @@ description: |
 
 **状态标记**:
 - ⏳ 待处理 (Pending)
-- 🟡 进行中 (In Progress)  
+- 🟡 进行中 (In Progress)
 - 🟢 已完成 (Completed)
 - 🔴 需返工 (Re-work Needed)
 - ⭐ 已验证 (Verified)
@@ -123,8 +123,8 @@ description: |
 
 ## 三大优化策略概览 / Optimization Strategies
 
-### 策略A: 降AI检测率（坚守最小干预原则）
-- **句内重组机制**：降AI修改仅限句内级别的结构重组与同义词更替，**严禁大范围扩写或整段洗稿**，避免引入新的AI行文模式。
+### 策略A: 降低 AI 写作风险特征（坚守最小干预原则）
+- **句内重组机制**：相关修改优先限于句内级别的结构重组与同义词更替，避免大范围扩写或整段洗稿。
 - **顺应人类逻辑**：完全尊重并保留作者原始的人类书写逻辑与思维跳跃，不强行填补“AI式完美过渡”，保留真实的撰写颗粒度。
 - **打破规整化句式**：刻意营造长短句交织，祛除AI偏爱的“高度对称、四平八稳、排比列举”等僵化行文特征。
 
@@ -142,11 +142,11 @@ description: |
 
 | 指标 | 目标值 | 评估方法 / 工具 |
 |------|--------|---------------|
-| 5D人类化评分 | > 40/50 | 依照 `evaluation_criteria.md` 对直接性/节奏感/自然度/学术性/精炼度进行评分 |
-| AI检测率 | < 10% (优秀) / <20% (合格) | GPTZero, Originality.ai 逐句预测 |
+| 5D质量评分 | 作为人工复核参考 | 依照 `references/evaluation_criteria.md` 对直接性/节奏感/自然度/学术性/精炼度进行评分 |
+| AI风险抽样检测 | 以用户指定工具为准 | 检测器结果仅作参考，不承诺固定阈值 |
 | 查重率 | < 10% | 知网, 维普 |
-| 句式突发性 | 句长方差 > 12 | 统计检查长短句错落分布 |
-| 词汇分布 | 剔除所有🔴强标记词 | 依照 `ai_vocabulary_blacklist.md` 进行校验 |
+| 句式节奏 | 避免过度均匀 | 统计检查长短句分布，结合人工判断 |
+| 词汇分布 | 避免高风险词密集出现 | 依照 `references/ai_vocabulary_blacklist.md` 进行校验 |
 
 ## 快速开始 / Quick Start
 
@@ -158,16 +158,16 @@ description: |
 
 ---
 
-**参考资源** (请务必在执行时**严格交叉阅读**):
+**参考资源** (按任务需要阅读):
 - *基础工作流*:
   - `templates/master_overview_template.md` - 总揽文档模板
   - `templates/chapter_task_template.md` - 章节任务模板
   - `references/evaluation_criteria.md` - 包含 5 维评分标准的评估体系
-- *前置检测体系* (🔥🔥🔥**核心**):
+- *前置风险参考*:
   - `references/ai_pattern_taxonomy.md` - 30+ 种中文学术论文 AI 模式判别
-  - `references/ai_vocabulary_blacklist.md` - 三级 AI 高频毒词表及重构指南
-  - `references/perplexity_burstiness.md` - GPTZero 检测原理及对抗理论
+  - `references/ai_vocabulary_blacklist.md` - 中文学术 AI 高频词汇风险参考
+  - `references/perplexity_burstiness.md` - 句式节奏与统计风险提示
 - *核心优化策略*:
-  - `references/strategy_ai_reduction.md` - 脱 AI 痕迹技术规程
+  - `references/strategy_ai_reduction.md` - AI 写作风险特征降低策略
   - `references/strategy_plagiarism.md` - 降查重防自引策略
   - `references/strategy_polishing.md` - 严谨化学术语言指南

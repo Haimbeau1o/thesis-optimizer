@@ -86,6 +86,7 @@
 - [ ] 整体AI检测率 < 20% (当前: {{CURRENT_AI_RATE}}%)
 - [ ] 整体查重率 < 10% (当前: {{CURRENT_PLAGIARISM_RATE}}%)
 - [ ] 句式多样性达标 (句长标准差 > 8)
+- [ ] 5D质量评分已完成（人工复核参考）
 - [ ] 词汇丰富度达标 (TTR > 0.6)
 
 ### 质量目标
@@ -157,7 +158,10 @@
 - [ ] `chapter_05_conclusion.md` - 总结展望优化任务
 
 ### 参考资源
-- `strategy_ai_reduction.md` - 降AI率策略
-- `strategy_plagiarism.md` - 降查重率策略
-- `strategy_polishing.md` - 润色指南
-- `evaluation_criteria.md` - 评估标准
+- `references/ai_pattern_taxonomy.md` - AI模式分类与定位
+- `references/ai_vocabulary_blacklist.md` - 高频AI词汇风险参考
+- `references/perplexity_burstiness.md` - 句式节奏与统计风险提示
+- `references/strategy_ai_reduction.md` - AI写作风险特征降低策略
+- `references/strategy_plagiarism.md` - 降查重率策略
+- `references/strategy_polishing.md` - 润色指南
+- `references/evaluation_criteria.md` - 评估标准

@@ -377,17 +377,17 @@ git clone https://github.com/Haimbeau1o/thesis-optimizer.git
 
 #### 场景 2：精细化微调“高风险”段落
 ```text
-@thesis-optimizer 以下这段实验结果分析被检测出 AI 疑似度极高，请帮我进行降AI处理。要求：保留现有的上下句逻辑连贯性，绝对不能推翻重排；以人类撰写习惯进行句内语序微调，制造长短句交织；清理段落中的 AI 高频词，替换为平实的学术表达。
+@thesis-optimizer 以下这段实验结果分析被检测出 AI 疑似度较高，请帮我进行降AI风险处理。要求：保留现有的上下句逻辑连贯性，不要推翻重排；以人类撰写习惯进行句内语序微调，适度调整长短句节奏；检查段落中的 AI 高频词，替换为平实的学术表达。
 ```
 
 #### 场景 3：查重与降 AI 双重优化（最高优保护术语）
 ```text
-@thesis-optimizer 请对第五章进行降查重与降AI的双重优化。执行时请将术语保护优先级调至最高（含公式、缩写）。降AI时绝不接受任何情绪化或网文风词汇，所有修改控制在单句范围内的同义重组，确保文本呈现最客观、中立的学术基调。
+@thesis-optimizer 请对第五章进行降查重与降AI风险的双重优化。执行时请优先保护术语（含公式、缩写）。降AI风险时避免任何情绪化或网文风词汇，修改尽量控制在单句范围内的同义重组，确保文本呈现客观、中立的学术基调。
 ```
 
 #### 场景 4：专项破除“AI 八股文”句式
 ```text
-@thesis-optimizer 我的第二章相关工作部分存在严重的‘AI八股文’现象（大量使用‘首先、其次、最后’或极其规整的并列结构）。请帮我进行结构性微调：打破僵化的工整性，引入自然衔接，要求改写范围极小，绝对不增加任何新的解释性废话。
+@thesis-optimizer 我的第二章相关工作部分存在明显的‘AI八股文’现象（大量使用‘首先、其次、最后’或极其规整的并列结构）。请帮我进行结构性微调：打破僵化的工整性，引入自然衔接，要求改写范围极小，不增加新的解释性废话。
 ```
 
 ---
@@ -556,7 +556,10 @@ thesis-optimizer/
 │   └── chapter_task_template.md      # 章节任务模板
 │
 └── references/                       # 策略参考文档
-    ├── strategy_ai_reduction.md      # 降 AI 检测率策略
+    ├── ai_pattern_taxonomy.md        # 中文学术论文 AI 模式分类
+    ├── ai_vocabulary_blacklist.md    # AI 高频词汇风险参考
+    ├── perplexity_burstiness.md      # 句式节奏与统计风险提示
+    ├── strategy_ai_reduction.md      # AI 写作风险特征降低策略
     ├── strategy_plagiarism.md        # 降查重率策略
     ├── strategy_polishing.md         # 学术润色策略
     └── evaluation_criteria.md        # 评估标准与方法

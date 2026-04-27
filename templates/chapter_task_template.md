@@ -24,7 +24,8 @@
 ### 量化目标
 - [ ] AI检测率 < 20% (当前: {{CURRENT_AI_RATE}}%)
 - [ ] 查重率 < 10% (当前: {{CURRENT_PLAGIARISM_RATE}}%)
-- [ ] 句式多样性达标
+- [ ] 句式多样性达标 (句长标准差 > 8)
+- [ ] 5D质量评分已完成（人工复核参考）
 
 ### 具体任务
 - [ ] 降低AI特征（句式多样化）
@@ -134,6 +135,7 @@
 | AI检测率 | {{BEFORE}}% | {{AFTER}}% | {{CHANGE}}% | {{STATUS}} |
 | 查重率 | {{BEFORE}}% | {{AFTER}}% | {{CHANGE}}% | {{STATUS}} |
 | 句式多样性 | {{BEFORE}} | {{AFTER}} | {{CHANGE}} | {{STATUS}} |
+| 5D质量评分 | {{BEFORE}}/50 | {{AFTER}}/50 | {{CHANGE}} | {{STATUS}} |
 
 ### 详细评估
 
